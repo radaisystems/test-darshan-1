@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: {{ values.repoName }}
+  description: {{ values.description }}
+  annotations:
+    github.com/project-slug: {{ values.repoOwner }}/{{ values.repoName }}
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: {{ values.appType }}
+  owner: group:platform-infra
+  lifecycle: experimental
+  system: platform
+  providesApis: []
+  consumesApis: []
+  dependsOn: []

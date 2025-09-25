@@ -1,0 +1,17 @@
+
+apiVersion: v2
+name: {{ values.repoName }}
+description: A Helm chart for {{ values.repoName }}
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - {{ values.appType }}
+  - {{ values.appLanguage }}
+home: https://github.com/{{ values.repoOwner }}/{{ values.repoName }}
+sources:
+  - https://github.com/{{ values.repoOwner }}/{{ values.repoName }}
+maintainers:
+  - name: {{ values.repoOwner }}
+    url: https://github.com/{{ values.repoOwner }}
+
